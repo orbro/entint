@@ -2,6 +2,11 @@ pragma solidity ^0.4.16;
 
 contract okrFactory {
 
+  uint currentPeriod;
+  uint objectiveCounter;
+  uint projectCounter;
+  uint roleCounter;
+
   struct objective{
     uint id; //Unique identifier for the objective; should just be an integer
     string name;
@@ -27,19 +32,26 @@ contract okrFactory {
     uint period; //To be the period within which the Role is being set; periods will start at 1; must match the period of the Project
   }
 
-  function createObjective (
+  function updatePeriod () {
+    currentPeriod = currentPeriod + 1;
+  }
 
+  function createObjective (
+    string name, string description, string successCriteria
     ) {
+
 
   }
 
   function createKeyResult (
+    string name, string description, string successCriteria
 
     ) {
 
   }
 
   function createProject (
+    string name, string description, string successCriteria
 
     ) {
 
