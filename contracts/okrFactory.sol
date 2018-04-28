@@ -7,6 +7,31 @@ contract Objective {
   string successCriteria;
   uint allocation;
   uint period; //To be the period within which the Objective is being set; periods will start at 1
+
+  function getId () public constant returns (uint) {
+    return(id);
+  }
+
+  function getName () public constant returns (string) {
+    return(name);
+  }
+
+  function getDescription () public constant returns (string) {
+    return(description);
+  }
+
+  function getSuccessCriteria () public constant returns (string) {
+    return(successCriteria);
+  }
+
+  function getAllocation () public constant returns (uint) {
+    return(allocation);
+  }
+
+  function getPeriod () public constant returns (uint) {
+    return(period);
+  }
+
 }
 
 contract Project {
@@ -16,6 +41,30 @@ contract Project {
   string successCriteria;
   uint allocation;
   uint period; //To be the period within which the Objective is being set; periods will start at 1
+
+  function getId () public constant returns (uint) {
+    return(id);
+  }
+
+  function getName () public constant returns (string) {
+    return(name);
+  }
+
+  function getDescription () public constant returns (string) {
+    return(description);
+  }
+
+  function getSuccessCriteria () public constant returns (string) {
+    return(successCriteria);
+  }
+
+  function getAllocation () public constant returns (uint) {
+    return(allocation);
+  }
+
+  function getPeriod () public constant returns (uint) {
+    return(period);
+
 }
 
 contract Role {
@@ -25,6 +74,30 @@ contract Role {
   string successCriteria;
   uint allocation;
   uint period; //To be the period within which the Objective is being set; periods will start at 1
+
+  function getId () public constant returns (uint) {
+    return(id);
+  }
+
+  function getName () public constant returns (string) {
+    return(name);
+  }
+
+  function getDescription () public constant returns (string) {
+    return(description);
+  }
+
+  function getSuccessCriteria () public constant returns (string) {
+    return(successCriteria);
+  }
+
+  function getAllocation () public constant returns (uint) {
+    return(allocation);
+  }
+
+  function getPeriod () public constant returns (uint) {
+    return(period);
+
 }
 
 contract KeyResult {
