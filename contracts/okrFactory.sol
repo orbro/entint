@@ -8,6 +8,16 @@ contract Objective {
   uint allocation;
   uint period; //To be the period within which the Objective is being set; periods will start at 1
 
+  struct keyResult {
+    uint id;
+    string name;
+    string description;
+    uint dueDate;
+    uint percentComplete;
+  }
+
+  mapping (uint => keyResult) keyResults;
+
   function getId () public constant returns (uint) {
     return(id);
   }
@@ -97,10 +107,6 @@ contract Role {
 
   function getPeriod () public constant returns (uint) {
     return(period);
-
-}
-
-contract KeyResult {
 
 }
 
